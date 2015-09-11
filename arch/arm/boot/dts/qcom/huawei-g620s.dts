@@ -49,6 +49,15 @@
 	};
 };
 
+&pm8916_bms {
+	qcom,shutdown-soc-valid-limit = <40>;
+	qcom,low-voltage-threshold = <3350000>;
+	qcom,resume-soc = <97>;
+	qcom,disable-vbatdet-based-recharge;
+	qcom,bpd-detection = "bpd_id";
+	qcom,force-bms-active-on-charger;
+};
+
 &soc {
 
 	sound {

@@ -30,6 +30,12 @@
 			<8116 0>, <8116 4>,
 			<8117 0>, <8117 4>,
 			<8103 0>, <8103 4>;
+
+	qrd_batterydata: qcom,battery-data {
+		#include "HB3742A0EBC_ATL_SWD-4v35-2000mah.dtsi"
+		#include "HB3742A0EBC_LS_LS-4v35-2000mah.dtsi"
+		#include "HB3742A0EBC_SONY_SCUD-4v35-2000mah.dtsi"
+	};
 };
 
 &soc {

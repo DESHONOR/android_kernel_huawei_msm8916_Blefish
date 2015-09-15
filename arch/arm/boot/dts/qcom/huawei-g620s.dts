@@ -58,6 +58,22 @@
 	qcom,force-bms-active-on-charger;
 };
 
+&pm8916_pon {
+	interrupts = <0x0 0x8 0x0>,
+		     <0x0 0x8 0x1>,
+		     <0x0 0x8 0x3>;
+	interrupt-names = "kpdpwr", "resin", "kpdpwr-bark";
+	qcom,pon-dbc-delay = <31250>;
+	qcom,s3-debounce = <16>;
+
+	qcom,pon_1 {
+		qcom,s1-timer = <6720>;
+		qcom,s2-timer = <2000>;
+		qcom,s2-type = <7>;
+		qcom,use-bark;
+	};
+};
+
 &soc {
 
 	sound {

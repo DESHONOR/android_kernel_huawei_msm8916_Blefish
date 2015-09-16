@@ -89,4 +89,10 @@
 				"AMIC2", "MIC BIAS External2",
 				"AMIC3", "MIC BIAS External";
 	};
+
+	i2c@78b9000 { /* BLSP1 QUP5 */
+		synaptics@70 {
+			vdd-supply = <&pm8916_l17>;
+		};
+	};
 };
